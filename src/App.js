@@ -24,9 +24,9 @@ const AppContent = () => {
     dispatch(fetchProfile());
   }, [dispatch]);
 
-  // if (profileLoading) {
-  //   return <LoadingSpinner fullPage text="Loading..." />;
-  // }
+  if (profileLoading) {
+    return <LoadingSpinner fullPage text="Loading..." />;
+  }
 
   return (
     <Router>
